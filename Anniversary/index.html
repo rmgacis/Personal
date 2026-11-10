@@ -18,61 +18,94 @@
 
       <div class="col-12 col-md-4">
         <div class="tile h-3 player">
-          <div id="spotify">
+          <div class="pl">
+            <img class="cover" src="images/cover.jpg" alt="Tahanan album cover" onerror="this.remove()">
+            <div class="titles">
+              <p class="now">Tahanan</p>
+              <p class="dim">El Manu</p>
+            </div>
+            <div class="seek">
+              <span id="cur">0:00</span>
+              <div class="bar" id="bar">
+                <div class="fill" id="fill"></div>
+              </div>
+              <span id="dur">0:00</span>
+            </div>
+            <div class="ctrl">
+              <button id="toggle" type="button" aria-label="Play or pause">
+                <svg class="pause" viewBox="0 0 24 24">
+                  <path id="icon" d="M6 5h4v14H6zM14 5h4v14h-4z" />
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="tile under"><span class="ph">images/photo-10.jpg</span><img src="images/photo-10.jpg" style="object-position: 50% 60%;"
-              alt="Our photo 10" onerror="this.remove()"></div>
+          <div class="tile under"><span class="ph">images/photo-10.jpg</span><img src="images/photo-10.jpg"
+              style="object-position: 50% 60%;" alt="Our photo 10" onerror="this.remove()"></div>
         </div>
         <div class="row g-0">
           <div class="col-6">
-            <div class="tile h-1"><span class="ph">images/photo-1.jpg</span><img src="images/photo-1.jpg" style="object-position: center 30%"
-                alt="Our photo 1" onerror="this.remove()"></div>
+            <div class="tile h-1"><span class="ph">images/photo-1.jpg</span><img src="images/photo-1.jpg"
+                style="object-position: center 30%" alt="Our photo 1" onerror="this.remove()"></div>
           </div>
           <div class="col-6">
-            <div class="tile h-1"><span class="ph">images/photo-2.jpg</span><img src="images/photo-2.jpg" 
+            <div class="tile h-1"><span class="ph">images/photo-2.jpg</span><img src="images/photo-2.jpg"
                 alt="Our photo 2" onerror="this.remove()"></div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-5">
+      <div class="col-6 col-md-5">
         <div class="tile h-1 code" id="code">
           <img src="images/song-code.png" alt="Our song" onerror="this.remove()" style="filter:none">
         </div>
-        <div class="tile h-2"><span class="ph">images/photo-3.jpg</span><img src="images/photo-3.jpg" alt="Our photo 3"
-            onerror="this.remove()"></div>
-        <div class="row g-0">
-          <div class="col-6">
-            <div class="tile h-1"><span class="ph">images/photo-4.jpg</span><img src="images/photo-4.jpg" style="object-position: 50% 50%"
-                alt="Our photo 4" onerror="this.remove()"></div>
+        <div class="tile h-2 flip" tabindex="0" role="button" aria-label="Flip photo to read the message">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span class="ph">images/photo-3.jpg</span><img src="images/photo-3.jpg" alt="Our photo 3"
+                onerror="this.remove()">
+            </div>
+            <div class="flip-back">
+              <p>Happy Anniversary, Bebi</p>
+              <p>Always remember that I am always here.<br>
+                To sorrow and joy, I am here as a friend and Boyfriend.</p>
+              <p>I am your "Tahanan" always. &lt;3</p>
+            </div>
           </div>
-          <div class="col-6">
+        </div>
+        <div class="row g-0">
+          <div class="col-12 col-md-6">
+            <div class="tile h-1"><span class="ph">images/photo-4.jpg</span><img src="images/photo-4.jpg"
+                style="object-position: 50% 50%" alt="Our photo 4" onerror="this.remove()"></div>
+          </div>
+          <div class="col-12 col-md-6">
             <div class="tile h-1"><span class="ph">images/photo-5.jpg</span><img src="images/photo-5.jpg"
                 alt="Our photo 5" onerror="this.remove()"></div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-3">
+      <div class="col-6 col-md-3">
         <div class="tile h-2"><span class="ph">images/photo-6.jpg</span><img src="images/photo-6.jpg" alt="Our photo 6"
             onerror="this.remove()"></div>
         <div class="row g-0">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="tile h-1 date">11/12/25</div>
           </div>
-          <div class="col-6">
-            <div class="tile h-1"><span class="ph">images/photo-7.jpg</span><img src="images/photo-7.jpg" style="object-position: center 30%"
-                alt="Our photo 7" onerror="this.remove()"></div>
+          <div class="col-12 col-md-6">
+            <div class="tile h-1"><span class="ph">images/photo-7.jpg</span><img src="images/photo-7.jpg"
+                style="object-position: center 30%" alt="Our photo 7" onerror="this.remove()"></div>
           </div>
         </div>
         <div class="row g-0">
-          <div class="col-6">
-            <div class="tile h-1"><span class="ph">images/photo-8.jpg</span><img src="images/photo-8.jpg" style="object-position: center 10%; transform: scale(1.2);"
-                alt="Our photo 8" onerror="this.remove()"></div>
+          <div class="col-12 col-md-6">
+            <div class="tile h-1"><span class="ph">images/photo-8.jpg</span><img src="images/photo-8.jpg"
+                style="object-position: center 10%; transform: scale(1.2);" alt="Our photo 8" onerror="this.remove()">
+            </div>
           </div>
-          <div class="col-6">
-            <div class="tile h-1"><span class="ph">images/photo-9.jpg</span><img src="images/photo-9.jpg" style="transform: scale(1.5); transform-origin: 50% 40%" 
-                alt="Our photo 9" onerror="this.remove()"></div>
+          <div class="col-12 col-md-6">
+            <div class="tile h-1"><span class="ph">images/photo-9.jpg</span><img src="images/photo-9.jpg"
+                style="transform: scale(1.5); transform-origin: 50% 40%" alt="Our photo 9" onerror="this.remove()">
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +113,10 @@
     </div>
   </main>
 
-  <button id="start" type="button">Click anywhere to play with sound</button>
+  <audio id="song" src="assets/song.mp3" preload="auto"></audio>
+
+  <button id="start" type="button"><span class="cover-date">11/12/25</span><span class="cover-hint">Click anywhere to
+      play with sound</span></button>
 
   <script>
     (function () {
@@ -92,32 +128,83 @@
       else code.querySelector('img').addEventListener('error', function () {code.innerHTML = logo + bars;});
     })();
 
-    var START_SECONDS = 45;
-    var SONG_URI = 'spotify:track:0JO9VhYHF6EI0KSw9xLI6A';
+    // Photos appear one after another once the song starts
+    document.querySelectorAll('.tile').forEach(function (t, i) {
+      t.style.transitionDelay = (i * 120) + 'ms';
+    });
 
-    var ctrl = null, seekPending = false;
-    window.onSpotifyIframeApiReady = function (IFrameAPI) {
-      IFrameAPI.createController(
-        document.getElementById('spotify'),
-        {uri: SONG_URI, width: '100%', height: '100%', startAt: START_SECONDS},
-        function (c) {
-          ctrl = c;
-          c.addListener('playback_update', function (e) {
-            if (seekPending && !e.data.isPaused) {
-              seekPending = false;
-              if (Math.abs(e.data.position / 1000 - START_SECONDS) > 2) c.seek(START_SECONDS);
-            }
-          });
-        }
-      );
-    };
+    // Flip card: click or Enter/Space to flip
+    document.querySelectorAll('.flip').forEach(function (card) {
+      function toggle() {card.classList.toggle('flipped');}
+      card.addEventListener('click', toggle);
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {e.preventDefault(); toggle();}
+      });
+    });
 
-    document.getElementById('start').addEventListener('click', function () {
-      document.body.classList.add('playing');
-      if (ctrl) {seekPending = true; ctrl.play();}
+    var START_SECONDS = 45;   // where the song starts (in seconds)
+
+    var audio = document.getElementById('song');
+    var fill = document.getElementById('fill');
+    var cur = document.getElementById('cur');
+    var dur = document.getElementById('dur');
+    var bar = document.getElementById('bar');
+    var icon = document.getElementById('icon');
+    var PAUSE = 'M6 5h4v14H6zM14 5h4v14h-4z';
+    var PLAY = 'M8 5v14l11-7z';
+
+    function fmt(t) {
+      if (!isFinite(t)) return '0:00';
+      var m = Math.floor(t / 60), s = Math.floor(t % 60);
+      return m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    audio.addEventListener('loadedmetadata', function () {
+      dur.textContent = fmt(audio.duration);
+      if (audio.currentTime < 1) audio.currentTime = START_SECONDS;
+    });
+    audio.addEventListener('timeupdate', function () {
+      cur.textContent = fmt(audio.currentTime);
+      if (audio.duration) fill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    });
+    audio.addEventListener('ended', function () {
+      audio.currentTime = START_SECONDS;
+      audio.play();
+    });
+    audio.addEventListener('play', function () {icon.setAttribute('d', PAUSE);});
+    audio.addEventListener('pause', function () {icon.setAttribute('d', PLAY);});
+
+    // Tap the progress bar to jump
+    bar.addEventListener('click', function (e) {
+      var r = bar.getBoundingClientRect();
+      if (audio.duration) audio.currentTime = (e.clientX - r.left) / r.width * audio.duration;
+    });
+
+    // Play / pause button
+    document.getElementById('toggle').addEventListener('click', function () {
+      if (audio.paused) audio.play(); else audio.pause();
+    });
+
+    // Cover screen: reveal the collage and start the song
+    var startBtn = document.getElementById('start');
+    startBtn.addEventListener('click', function () {
+      if (startBtn.classList.contains('fading')) return;
+      startBtn.classList.add('fading');
+      setTimeout(function () {
+        document.body.classList.add('playing');
+        // Clear the stagger delay once the reveal is done so hover effects aren't laggy
+        setTimeout(function () {
+          document.querySelectorAll('.tile').forEach(function (t) {t.style.transitionDelay = '';});
+        }, 3500);
+      }, 500);
+      var p = audio.play();
+      if (p && p.then) {
+        p.then(function () {
+          if (audio.currentTime < START_SECONDS - 2) audio.currentTime = START_SECONDS;
+        });
+      }
     });
   </script>
-  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 </body>
 
 </html>
